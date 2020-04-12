@@ -1,0 +1,619 @@
+/*******************************     styling for the header    ******************************/
+
+body {
+    background-color: #060003;
+}
+
+.headline {
+    font-size: 1.6rem;
+    text-align: center;
+    color: white;
+    font-family: 'Anton', sans-serif;
+}
+
+.space {
+    display:flex;
+    align-items: center;
+}
+/* .headline::before {
+    content: "";
+    box-sizing: content-box;
+    min-width: .75em;
+    height: .175em;
+    border-bottom: solid .75em transparent;
+    margin-right: .125em;
+} */
+
+.header {
+    box-shadow: 5px 5px 8px 5px rgba(236, 222, 220 , 0.4);
+    padding:5px;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index: 10001;
+}
+
+.top-bar, .top-bar ul {
+    background-color: #CABFC5;
+}
+
+.top-bar  a{
+    color:#210313;
+    font-size: 1.2rem;
+}
+
+.button {
+    color:white;
+}
+
+.button {
+    background-color: #922723;
+    border-radius: 0.2rem;
+    font-size: 1.1rem;
+}
+
+.button:hover, .button:focus {
+    background-color: white;
+}
+
+.button:hover, .button:focus {
+    color:  #922723;
+}
+
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+    border-color: #922723 transparent transparent;
+}
+
+.dropdown.menu > li.is-active > a {
+    color:#922723;
+}
+
+a:hover, a:focus {
+    color:#922723;
+}
+
+.top-bar input {
+    max-width: 300px;
+    margin-right:10px;
+}
+
+.menu a, .menu .button {
+    line-height: 1;
+    text-decoration: none;
+    display: block;
+    padding: 0.6rem 1rem;
+}
+
+.grey-1 {
+    background-color: #CABFC5;
+}
+
+.height-1 {
+    height:5.0rem;
+}
+
+.height-2{
+    min-height: 15rem;
+}
+
+#search {
+    border:1px solid #922723;
+    width:100%;
+}
+
+.height-3 {
+    height: 3rem;
+}
+
+/**************************** search list***************************/
+.found {
+    position: absolute;
+    background-color: #CABFC5;
+    width:19rem;
+    height:16.0rem;
+    margin-left: 0px;
+    margin-top: 40px;
+    display:none;
+    border-radius: 15px;
+}
+
+.found li {
+    list-style: none;
+    /* padding:5px; */
+}
+
+.found ul {
+    padding:0;
+    margin:0;
+}
+
+.search_list > div:first-child {
+    /* background-color: orange; */
+    width:4.0rem;
+    margin:10px;
+    float:left;
+}
+
+.search_list > div:last-child {
+    /* background-color: pink; */
+    width:8.0rem;
+    line-height: 40px;
+    float:right;
+    margin-right:80px;
+}
+
+.search_list {
+    width:100%;
+    height:80px;
+    overflow: hidden;
+    border-bottom:1px solid lightgray;
+}
+
+.search_list:hover, .search_list:active {
+    background-color:#f2edf0;
+    cursor: pointer;
+}
+
+
+.search_list img {
+    width:100%;
+}
+
+/*******************************  splash site  ********************************/
+
+/* featured section */
+.height-4{
+    height: 20rem;
+}
+
+/* .divController {
+    height:30rem;
+    overflow: hidden;
+} */
+
+/* .trendingSlider {
+    height:31rem;
+} */
+
+.trendingSlider, .bannerHolder {
+    overflow: hidden;
+}
+
+.bannerHolder1{
+    background-image: url(../img/splash/harrypotter.jpg);
+    background-size: cover;
+}
+
+.bannerHolder2{
+    background-image: url(../img/splash/invisible_guest_350.jpg);
+    background-size: cover;
+}
+
+/* .bannerHolder_splash1{
+    background-image: url(../img/splash/joker.jpg);
+    background-size: cover;
+}
+
+.bannerHolder_splash2{
+    background-image: url(../img/people/jennifer.jpg);
+    background-size: cover;
+} */
+
+/* .banner {
+    background-color:rgba(255,255,255,0.5);
+    position: relative;
+    height:80px;
+    margin-top: -120px;
+    z-index: 1;
+    font-size:1.8rem;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    color:#210313;
+} */
+
+.banner {
+    background-color: rgba(255,255,255,0.5);
+    height:80px;
+    margin-top: 240px;
+    z-index: 1;
+    font-size:1.4rem;
+    text-align: center;
+    line-height: 80px;
+    font-family: 'Anton', sans-serif;
+    color:#210313;
+}
+
+.banner p {
+    line-height: 80px;
+}
+
+.trendingImg {
+    height:20rem;
+    overflow: hidden;
+}
+
+button.slick-prev.slick-arrow {
+    display: none !important;
+}
+
+button.slick-next.slick-arrow {
+    display: none !important;
+}
+
+.slick-track{
+    position: relative;
+}
+
+ul.slick-dots {
+    list-style: none;
+    margin:0;
+    display:flex;
+    justify-content: center;
+    top:90%;
+    width:100%;
+    /* margin-right:auto;
+    margin-left:auto;
+    margin-top:20px;
+    margin-bottom:0; */
+    position: absolute;
+}
+
+ul.slick-dots li {
+    display:inline-block;
+    background-color: rgba(255,255,255,0.5);
+    margin:10px;
+    border-radius:50%;
+    width:15px;
+    height:15px;
+}
+
+ul.slick-dots li button {
+    color:transparent;
+}
+
+ul.slick-dots li.slick-active {
+    background-color: rgba(255,0,0,0.8);
+}
+
+ul.slick-dots  {
+    color:transparent;
+}
+
+.grey-5 {
+    background-color: #555;
+}
+
+/*******************************  movie site  ********************************/
+.movie_intro li {
+    list-style: none;
+    color: white;
+    margin-left: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: large;
+}
+
+.card:hover img{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: transform 500ms ease-in-out;
+}
+
+/* .card:hover .crop{
+    overflow: hidden;
+} */
+
+.card img {
+    transform: scale(1);
+    transition: transform 500ms ease-in-out;
+}
+
+.desc {
+    font-weight: bolder;
+    
+}
+
+.movie_desc {
+    margin-left:auto;
+    margin-right:auto;
+    font-size:1.2em;
+}
+
+
+.movie_intro, .didYouKnow, .desc_section {
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.3rem;
+    margin-bottom:20px;
+    
+}
+.movie_intro, .didYouKnow {
+    margin-top:-10px;
+}
+
+.desc_section {
+    margin-top: 15px;
+}
+
+.movie_intro .movie_name {
+    font-size:2em;
+    color:white;
+    font-family: 'Anton', sans-serif;
+}
+
+.bannerHolder_movie_poster{
+    background-image: url(../img/splash/parasite.jpg);
+    background-size: cover;
+}
+
+.movie_intro {
+    margin-left:20px;
+}
+
+
+span {
+    margin-right:8px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bolder;
+    display:block;
+    float:left;
+}
+
+.crop_cast {
+    /* height:166px; */
+    overflow: hidden;
+}
+
+.crop_screenshot {
+    /* height:150px; */
+    overflow: hidden;
+}
+
+.didYouKnow {
+    padding:10px 0;
+}
+
+.main_poster {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.main_poster_holder {
+    height:16rem;
+    overflow: hidden;
+}
+
+.genre div {
+    display:inline;
+    padding:5px;
+    background-color: #922723;
+    border-radius: 10px;
+    margin-right:10px;
+}
+
+.writer div {
+    display:inline;
+    margin-right:20px;
+}
+/******************************* people site ********************************/
+/* .bannerHoler_people_poster{
+    height: 
+} */
+
+/*  movie card section  */
+
+.lines {
+    margin:15px 0px 15px 0px;
+}
+
+.trending {
+    margin:110px 0px 15px 0px;
+}
+
+
+
+.line {
+    width:100%;
+    height:2px;
+    background-color: white;
+    margin-bottom: 18px;
+    margin-top:5px;
+}
+
+h4 {
+    font-size:1.2rem;
+}
+
+.card-section {
+    padding:0.5rem;
+    color: white;
+    text-align: center;
+}
+
+.card {
+    background-color: transparent;
+    border: none;
+}
+
+/* .card.movie{
+    height:351px;
+} */
+
+.card.people{
+    height:auto;
+}
+
+.crop {
+    /* height:250px; */
+    overflow: hidden;
+}
+
+.margin-top {
+    margin-top:1rem;
+}
+
+.width-100 {
+    width:100%;
+}
+
+.height-100 {
+    height:100%;
+    overflow: hidden;
+}
+
+
+.bannerHolder img {
+    width: 100%;
+    margin-bottom:10px;
+    overflow: hidden;
+}
+
+/********************************************** footer styling ***********************************************/
+.copyright {
+    line-height: 80px;
+    color: #210313;
+    font-size: 1.1rem;
+}
+
+.fontawesome {
+    font-size:2.5rem;
+    color: #210313;
+}
+
+
+/* for small viewport */
+@media print, screen and (max-width: 40em){
+    /* put larger text size, more contrast with the normal screen */
+    .logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .top-bar  a{
+        font-size: 1.1rem;
+    }
+
+    .top-bar-left {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .top-bar-right {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .crop {
+        /* height:250px; */
+        overflow: hidden;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+
+    .socialIcon {
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .fontawesome {
+        font-size:2rem;
+        display:inline-block;
+        margin:1rem;
+    }
+
+    div.slick-list.draggable {
+        height:10rem;
+    }
+
+    .bannerHolder{
+        display: none;
+    }
+
+    .lineTop {
+        display:none;
+    }
+
+    .trending {
+        margin:150px 0px 15px 0px;
+    }
+
+    /* movie site  */
+
+    .crop_cast {
+        /* height:90px; */
+        overflow: hidden;
+    }
+
+    .crop_screenshot {
+        /* height:188; */
+        /* overflow: hidden; */
+        margin-left:auto;
+        margin-right:auto;
+        padding:10px;
+    }
+
+    iframe {
+        width:100%;
+        height:auto;
+    }
+
+    .spaceTop {
+        display:none;
+    }
+
+    .headline {
+        text-align: left;
+        margin:0;
+        font-size: 1.2em;
+    }
+
+    .didYouKnow {
+        font-size:1em;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #main-menu {
+        width:100%;
+    }
+
+    .bannerHolder1, .bannerHolder2 {
+        display:none;
+    }
+
+    ul.slick-dots{
+        margin-top:0%;
+        width:100%;
+        /* margin-right:auto;
+        margin-left:auto;
+        margin-top:20px;
+        margin-bottom:0; */
+        position: relative;
+    }
+    
+    div.grid-x.headering{
+        display:flex;
+        align-items: center;
+    }
+
+}
+
+/* for medium viewport */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .bannerHolder1, .bannerHolder2 {
+        display:none;
+    }
+
+    ul.slick-dots{
+        margin-top:0%;
+        width:100%;
+        /* margin-right:auto;
+        margin-left:auto;
+        margin-top:20px;
+        margin-bottom:0; */
+        position: relative;
+    }
+
+}

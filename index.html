@@ -1,0 +1,328 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MMDB Movie Sites</title>
+        <!-- google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald:300&display=swap" rel="stylesheet">
+
+        <!-- font awesome -->
+        <script src="https://kit.fontawesome.com/0408cc8e17.js" crossorigin="anonymous"></script>
+
+        <!-- link to stylesheet -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" href="css/foundation.css">
+        <link rel="stylesheet" href="css/app.css">
+    </head>
+    <body>
+
+        <!-- header section, same for all pages -->
+        <div class="grey-1 header">
+            <div class="grid-container">
+                <div class="grid-x headering">
+
+                    <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
+                        <button class="menu-icon" type="button" data-toggle="main-menu"></button>
+                        <div class="title-bar-title">
+                            <img class="height-100" src="img/logo_MMDB.svg" alt="logo">
+                        </div>
+                    </div>
+
+                    <div class="large-3 medium-3 small-8 cell height-1 splash">
+                        <img class="height-100 logo" src="img/logo_MMDB.svg" alt="logo">
+                    </div>
+
+                    
+        
+                    <div class="top-bar large-9 medium-9 grid-x" id="main-menu">
+                        <div class="top-bar-left large-6 medium-8">
+                            <ul class="dropdown menu" data-dropdown-menu>
+                                <!-- <li class="menu-text">Site Title</li> -->
+                                <li>
+                                    <a href="#">Selection</a>
+                                    <ul class="menu vertical">
+                                        <li><a href="#">Movies</a></li>
+                                        <li><a href="#">Actors</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">History</a></li>
+                                <li><a href="#">Log In</a></li>
+                            </ul>
+                        </div>
+                        <div class="top-bar-right large-6 medium-4">
+                            <ul class="menu grid-x">
+                                <li class="large-8"><input id="search" type="search" placeholder="What do you want to watch today?"></li>
+                                <li class="large-3"><button type="button" class="button">Search</button></li>
+                                <div class="found hide_all">
+                                    <ul>
+                                    </ul>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- main content section -->
+        <div class="grid-container margin-top">
+            <!-- splash page -->
+            <div class="splash_container hide_all">
+                <!-- featured section -->
+                <div class="grid-x grid-margin-y lines trending">
+                    <!-- <h2 class="headline">WHAT'S TRENDING</h2> -->
+                    <div class="large-2 medium-2 cell height-3 spaceTop space">
+                        <div class="line "></div>
+                    </div>
+                    <div class="large-3 medium-3 cell height-1 headline">WHAT'S TRENDING</div>
+                    <div class="large-7 medium-7 cell height-3 space">
+                        <div class="line cell"></div>
+                    </div>
+                </div>
+                
+                <div class="grid-x  grid-margin-x grid-margin-y">
+                    <div class="large-6 cell height-4">
+                        <div class="trendingSlider">
+                            <div class="trendingImg"><img src="img/splash/slider1.jpg" alt="movie1"></div>
+                            <div class="trendingImg"><img src="img/splash/joker.jpeg" alt="movie2"></div>
+                            <div class="trendingImg"><img src="img/splash/parasite.jpg" alt="movie3"></div>
+                            <div class="trendingImg"><img src="img/splash/last_christmas.jpg" alt="movie4"></div>
+                        </div>
+                    </div> 
+        
+                    <div class="large-3 small-6 cell grey-5 height-4 bannerHolder1">
+                        <div class="banner">Watch Again</div>
+                    </div>
+                    <div class="large-3 small-6 cell grey-5 height-4 bannerHolder2">
+                        <div class="banner">My Selection</div>
+                    </div>
+                </div>
+                <!-- <div class="trendingSlider">
+                    
+                </div> -->
+
+                <!-- the movie collection, this is where you copy and paste your code in js -->
+                <div class="grid-x grid-margin-y lines">
+                    <div class="large-2 medium-2 cell height-3 spaceTop space">
+                        <div class="line"></div>
+                    </div>
+                    <div class="large-3 medium-4 cell height-1 headline">COLLECTION OF MOVIES</div>
+                    <div class="large-7 medium-6 cell height-3 space">
+                        <div class="line cell"></div>
+                    </div>
+                </div>
+
+                <div class="grid-x  splash_content grid-margin-x grid-margin-y large-up-5 small-up-2 ">
+                    
+                </div>
+            </div>
+
+            <!-- movie page -->
+            <div class="movie_container hide_all">
+                <!-- the featured section -->
+                <div class="grid-x grid-margin-y lines trending">
+                    <div class="large-2 medium-2 cell spaceTop space height-3">
+                    <div class="line"></div>
+                    </div>
+                    <div class="large-2 medium-3 cell height-1 headline">MOVIE INFO</div>
+                    <div class="large-8 medium-7 cell space height-3">
+                        <div class="line cell"></div>
+                    </div>
+                </div>
+
+                <div class="grid-x  grid-margin-x grid-margin-y">
+                    <div class="large-7 cell height-4">
+                        <iframe src="" alt="" width="650" height="362" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                        <div class="main_poster_hoder">
+                            <img src="" alt="" class="main_poster"> 
+                        </div>    
+                        <div class="desc_section">
+                            <!-- <p class="desc">Description</p> -->
+                            <p class="movie_desc">Bong Joon Ho brings his work home to Korea in this pitch-black modern fairytale. Meet the Park Family: the picture of aspirational wealth. And the Kim Family, rich in street smarts but not much else. Be it chance or fate, these two houses are brought together and the Kims sense a golden opportunity. Masterminded by college-aged Ki-woo, the Kim children expediently install themselves as tutor and art therapist, to the Parks. Soon, a symbiotic relationship forms between the two families. The Kims provide "indispensable" luxury services while the Parks obliviously bankroll their entire household. When a parasitic interloper threatens the Kims' newfound comfort, a savage, underhanded battle for dominance breaks out, threatening to destroy the fragile ecosystem between the Kims and the Parks.</p>
+                        </div>        
+                    </div> 
+
+                    <div class="large-5 cell height-4">
+                        <ul class="movie_intro">
+                            <li class="movie_name"></li>
+                            </br>
+                            <span>Release Date:</span><li class="date"></li>
+                            </br>
+                            <span>Rating:</span><li class="rating"></li>
+                            </br>
+                            <span>Hours:</span><li class="hours"></li>
+                            </br>
+                            <span>Genre:</span><li class="genre"></li>
+                            </br>
+                            <span>Category:</span><li class="category"></li>
+                            </br>
+                            <span>Country:</span><li class="country"></li>
+                            </br>
+                            <span>Language:</span><li class="language"></li>
+                            </br>
+                            <span>Color:</span><li class="color"></li>
+                            </br>
+                            <span>Writers:</span><li class="writer"></li>
+                            </br>
+                        </ul>
+                    </div>
+                    
+
+                </div>
+
+                <!-- the movie cast section -->
+                <div class="grid-x grid-margin-y lines">
+                    <div class="large-2 medium-2 spaceTop space cell height-3">
+                    <div class="line"></div>
+                    </div>
+                    <div class="large-2 medium-3 cell height-1 headline">MOVIE CAST</div>
+                    <div class="large-8 medium-7 space cell height-3">
+                        <div class="line cell"></div>
+                    </div>
+                </div>
+
+                <div class="grid-x  grid-margin-x grid-margin-y cast">
+                    
+                </div>
+                <!-- screenshot section -->
+                <div class="grid-x grid-margin-y lines">
+                        <div class="large-2 medium-2 spaceTop space cell height-3">
+                        <div class="line"></div>
+                        </div>
+                        <div class="large-2 medium-3 cell height-1 headline">MOVIE SCENES</div>
+                        <div class="large-8 medium-7 space cell height-3">
+                            <div class="line cell"></div>
+                        </div>
+                </div>
+                <div class="grid-x  grid-margin-x grid-margin-y scenes">
+                    
+                </div>
+                    
+                <!-- related movie section -->
+                <div class="grid-x grid-margin-y lines">
+                        <div class="large-2 medium-2 spaceTop space cell height-3">
+                        <div class="line"></div>
+                        </div>
+                        <div class="large-2 medium-3 cell height-1 headline">RELATED MOVIES</div>
+                        <div class="large-8 medium-7 space cell height-3">
+                            <div class="line cell"></div>
+                        </div>
+                </div>
+
+                <div class="grid-x  grid-margin-x grid-margin-y related_movies large-up-5 small-up-2">
+                </div>    
+
+                <!-- did you know section -->
+                <div class="grid-x grid-margin-y lines">
+                        <div class="large-2 medium-2 spaceTop space cell height-3">
+                        <div class="line"></div>
+                        </div>
+                        <div class="large-2 medium-3 cell height-1 headline">DID YOU KNOW</div>
+                        <div class="large-8 medium-7 space cell height-3">
+                            <div class="line cell"></div>
+                        </div>
+                </div>
+
+                <div class="grid-x  grid-margin-x grid-margin-y">
+                        <div class="cell grey-4">
+                            <p class="didYouKnow">Parasite premiered at Cannes in May and played at the Toronto International Film Festival and the New York Film Festival, among others. It opens in theaters on</p>
+                        </div>
+                </div>
+            </div>
+
+            <!-- people page -->
+            <div class="people_container hide_all">
+                <!-- the people basic info section -->
+                <div class="grid-x grid-margin-y lines trending">
+                    <div class="large-2 medium-2 cell space spaceTop height-3">
+                        <div class="line"></div>
+                    </div>
+                    <div class="large-3 medium-3 cell height-1 headline people_name"></div>
+                    <div class="large-7 medium-7 cell space height-3">
+                        <div class="line cell"></div>
+                    </div>
+                </div>
+                <div class="grid-x  grid-margin-x grid-margin-y">
+
+                    <div class="large-5 cell height-4 bannerHoler_people_poster">
+                        <img src="" alt="">
+                    </div>
+
+                    <div class="large-7 cell height-4">
+                        <ul class="movie_intro">
+                            <span>Born:</span><li class="born"></li>
+                            </br>
+                            <span>Die:</span><li class="die"></li>
+                            </br>
+                            <span>Biography:</span><li class="bio"></li>
+                        </ul>
+                        <!-- <div class="banner">The Box Office Hit Of 2019</div> -->
+                    </div>
+                </div>
+
+                <!-- the people photo section -->
+                <div class="grid-x grid-margin-y lines">
+                    <div class="large-2 medium-2 space spaceTop cell height-3">
+                        <div class="line"></div>
+                    </div>
+                    <div class="large-2 medium-2 cell height-1 headline">PHOTOS</div>
+                    <div class="large-8 medium-8 space cell height-3">
+                        <div class="line cell"></div>
+                    </div>
+                </div>
+
+                <div class="grid-x  grid-margin-x grid-margin-y people_photos">
+                
+                </div>
+            
+                <!-- related movie section -->
+                <div class="grid-x grid-margin-y lines">
+                        <div class="large-2 medium-2 space spaceTop cell height-3">
+                            <div class="line"></div>
+                        </div>
+                        <div class="large-2 medium-2 cell height-1 headline">KNOWN FOR</div>
+                        <div class="large-8 medium-8 space cell height-3">
+                            <div class="line cell"></div>
+                        </div>
+                </div>
+
+                <div class="grid-x  grid-margin-x grid-margin-y peopole_related_movies large-up-5 small-up-2">
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- footer section -->
+        <div class="grey-1 footer">
+            <div class="grid-container">
+                <div class="grid-x">
+                    <div class="large-8 medium-6 cell height-1 copyright">
+                        © MMDB 2019
+                    </div>
+        
+                    <div class="top-bar large-4 medium-6 grid-x" id="main-menu">
+                        <i class="fab fa-facebook fontawesome"></i>
+                        <i class="fab fa-twitter fontawesome"></i>
+                        <i class="fab fa-instagram fontawesome"></i>
+                        <i class="fab fa-google-plus-g fontawesome"></i>
+                        <i class="fab fa-whatsapp fontawesome"></i>
+                    </div>
+                    
+                    <!-- <div class="large-6 cell gray-4 height-1">MENU</div>
+                    <div class="large-4 cell gray-4 height-1">SEARCH</div> -->
+                </div>
+            </div>
+        </div>
+
+
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/vendor/what-input.js"></script>
+        <script src="js/vendor/foundation.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
